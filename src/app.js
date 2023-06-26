@@ -44,7 +44,7 @@ function displayTemperature(response){
     iconElement.setAttribute ("alt", response.data.weather[0].description)
 }
 let apiKey ="cc588eebecccb6cd400b2c940a3f3233"
-let city ="Rome"
+let city ="New York"
 let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
 axios.get(apiUrl).then(displayTemperature)
